@@ -41,14 +41,14 @@ This repository contains the implementation for a **YOLO Object Detection** appl
 #### Usage:
 - **Run the application**
 - **Interface**:
-   - **The application provides a user-friendly GUI with multiple tabs:**
-      - Main Functions Tab:
+   - **Main Functions Tab:**
+    - Upload an image, video, or start the webcam.
 
 
 
 
-      
-       
+
+
 - **Run the application**
 - **Run the application**
 - **Run the application**
