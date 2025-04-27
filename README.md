@@ -30,4 +30,27 @@ This repository contains the implementation for a **YOLO Object Detection** appl
 - **YOLOv8 Model**: **yolov8x.pt** (downloaded separately).
 - **Dependencies**: Listed in **requirements.txt**.
 
+#### Installation:
+1. Install **Python 3.8+** from python.org.
+2. Clone the repository
+3. Switch to the **develop** branch for the full codebase
+4. Install dependencies
+5. Download the **YOLOv8 model** **(yolov8x.pt)** from Google Drive and place it in the project root.
+6. Ensure the **assets/** folder contains **waiting.png**, **loading.png**, and **icon.png**.
+
+#### Usage:
+- **Run the application**
+- **Interface**:
+   - **The application provides a user-friendly GUI with multiple tabs:**
+      - Main Functions Tab:
+
+
+
+
+      
+       
+- **Run the application**
+- **Run the application**
+- **Run the application**
+
 ---
