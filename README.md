@@ -4,7 +4,6 @@
 This repository contains the implementation for a **YOLO Object Detection** application. The goal of the project is to create a fully functional GUI-based application that performs real-time object detection using the **YOLOv8** model. The application supports processing images, videos, webcam feeds, and batch operations, with customizable output formats and a user-friendly interface.
 
 ### The development of this project consists of several key steps:
-
 1. Designing and developing the object detection logic using YOLOv8.
 2. Utilizing PyQt5 to create a graphical user interface (GUI).
 3. Handling input/output interactions through file uploads, webcam feeds, and result saving.
@@ -14,23 +13,13 @@ This repository contains the implementation for a **YOLO Object Detection** appl
    - **System Monitoring: Display real-time CPU, GPU, and memory usage.**
    - **Logging: Record all operations to logs.log for debugging.**
 
-1. Designing and developing the game logic for **Rock, Paper, Scissors**.
-2. Utilizing the **Arduino Uno R3** as the hardware platform to run the game.
-3. Handling input/output interactions using available hardware components.
-4. Ensuring seamless gameplay across the following modes:
-   - **Player vs AI**
-   - **Player vs Player**
-   - **AI vs AI**
-
-### Student Details
-| Student Number | Student Name              | Game                  | Config Format |
-|----------------|---------------------------|-----------------------|---------------|
-| 22             | **Khmilovskiy Stanislaw** | Rock, Paper, Scissors | **XML**       |
-
-### Technologies and Hardware
+### Technologies and Software
 #### Technologies:
-- **Programming Language**: C# & WindowsForms for microcontroller programming.
-- **Development Environment**: Arduino IDE or compatible tools.
+- **Programming Language**: Python for application logic and GUI.
+- **Frameworks and Libraries**:
+    - **PyQt5: For the graphical user interface.**
+
+
 - **Version Control**: Git for source code management and collaboration.
   
 #### Hardware:
