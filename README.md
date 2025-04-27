@@ -1,172 +1,41 @@
-# object-classifier-project
+### **YOLO Object Classifier Project**
 
-YOLO Object Detection
-A GUI-based application for object detection using YOLOv8. This project supports processing images, videos, webcam feeds, and batch operations with customizable output in Excel and CSV formats.
-Table of Contents
+### Project Overview
+This repository contains the implementation for a **YOLO Object Detection** application. The goal of the project is to create a fully functional GUI-based application that performs real-time object detection using the **YOLOv8** model. The application supports processing images, videos, webcam feeds, and batch operations, with customizable output formats and a user-friendly interface.
 
-Features
-Installation
-Usage
-Branching Strategy
-Screenshots
-Output Structure
-Project Structure
-Requirements
-Notes
-License
-Contributing
+### The development of this project consists of several key steps:
 
-Features
+1. Designing and developing the object detection logic using YOLOv8.
+2. Utilizing PyQt5 to create a graphical user interface (GUI).
+3. Handling input/output interactions through file uploads, webcam feeds, and result saving.
+4. Ensuring seamless functionality across the following features:
+   - **Single Detection: Process images, videos, or webcam feeds with adjustable confidence thresholds.**
+   - **Batch Processing: Process multiple images with Excel/CSV output.**
+   - **System Monitoring: Display real-time CPU, GPU, and memory usage.**
+   - **Logging: Record all operations to logs.log for debugging.**
 
-Real-time Detection: Perform object detection on images, videos, or webcam feeds using YOLOv8.
-Batch Processing: Process multiple images with results saved to images/, txt/, and user-selected Excel and/or CSV files.
-System Monitoring: Display real-time CPU, GPU, and memory usage.
-Customizable Confidence: Adjust detection confidence via synchronized sliders and spinbox.
-Result Saving: Save individual detection results as images and text files in images/ and txt/ subfolders.
-Progress Tracking: Visualize batch processing progress with a progress bar.
-Logging: Log all operations (model loading, processing, errors) to logs.log for debugging.
-Custom UI:
-waiting.png: Default image displayed at startup and after resetting the image display.
-loading.png: Shown during batch processing for better user experience.
-icon.png: Custom application icon.
+1. Designing and developing the game logic for **Rock, Paper, Scissors**.
+2. Utilizing the **Arduino Uno R3** as the hardware platform to run the game.
+3. Handling input/output interactions using available hardware components.
+4. Ensuring seamless gameplay across the following modes:
+   - **Player vs AI**
+   - **Player vs Player**
+   - **AI vs AI**
 
+### Student Details
+| Student Number | Student Name              | Game                  | Config Format |
+|----------------|---------------------------|-----------------------|---------------|
+| 22             | **Khmilovskiy Stanislaw** | Rock, Paper, Scissors | **XML**       |
 
-Batch Output Options: Select Excel, CSV, or both via checkboxes in the Batch Processing tab (at least one must be selected, or an error is shown).
-Modular Code: Organized codebase with English documentation for maintainability.
+### Technologies and Hardware
+#### Technologies:
+- **Programming Language**: C# & WindowsForms for microcontroller programming.
+- **Development Environment**: Arduino IDE or compatible tools.
+- **Version Control**: Git for source code management and collaboration.
+  
+#### Hardware:
+- **Microcontroller**: Arduino Uno R3.
+- **Output**: Display or interface for showing game states.
+- **Power Source**: Powered via USB connection.
 
-Installation
-
-Install Python 3.8+.
-Clone the repository:git clone https://github.com/OrangeP1llow/object-classifier-project.git
-cd object-classifier-project
-
-
-Switch to the develop branch for the full codebase:git checkout develop
-
-
-Install dependencies:pip install -r requirements.txt
-
-
-Download the YOLOv8 model (yolov8x.pt) from Google Drive and place it in the project root.
-Ensure the assets/ folder contains waiting.png, loading.png, and icon.png.
-
-Usage
-Run the application:
-python main.py
-
-Interface
-
-Main Functions Tab:
-Upload an image, video, or start the webcam.
-Adjust the confidence threshold and initiate detection.
-Save results to images/ and txt/ subfolders.
-
-
-Batch Processing Tab:
-Select input and output folders.
-Choose output formats (Excel, CSV, or both) via checkboxes.
-Process images and save results to images/, txt/, and selected Excel/CSV files.
-Displays loading.png during processing and waiting.png by default or after completion.
-Monitor progress with a progress bar.
-
-
-About Tab:
-View application information.
-
-
-
-Logs
-All operations are logged to logs.log in the project root, including:
-
-Model loading
-Image/video processing
-Errors and warnings
-Checkbox selections
-Image display events
-
-View logs:
-cat logs.log  # On Linux/Mac
-type logs.log  # On Windows
-
-Branching Strategy
-
-main: Contains only README.md and .gitignore for a clean project overview.
-develop: Full codebase, including source files, assets, documentation, and README.md.
-
-Screenshots
-
-Batch Processing Tab (with loading.png and progress bar):
-Default View (with waiting.png):
-
-Output Structure
-
-Single Detection:
-Images: save_folder/images/detection_*.jpg
-Text files: save_folder/txt/detection_*.txt
-
-
-Batch Processing:
-Images: output_folder/images/detected_*.jpg
-Text files: output_folder/txt/detected_*.txt
-Excel (if selected): output_folder/batch_results_*.xlsx
-Columns: Filename, Objects Found, Processing Time (s), Classes Detected
-
-
-CSV (if selected): output_folder/batch_results_*.csv
-Same columns as Excel
-
-
-
-
-
-Project Structure
-Available on the develop branch:
-object-classifier-project/
-├── assets/
-│   ├── waiting.png        # Default image at startup and after reset
-│   ├── loading.png        # Displayed during batch processing
-│   └── icon.png           # Application icon
-├── docs/
-│   ├── default_view.png   # Screenshot of default GUI view
-│   └── batch_processing.png  # Screenshot of batch processing
-├── main.py                # Application entry point
-├── gui.py                 # GUI implementation using PyQt5
-├── detector.py            # YOLOv8 detection logic
-├── utils.py               # Utilities for image processing and system monitoring
-├── file_manager.py        # File saving and naming utilities
-├── config.py              # Configuration settings
-├── requirements.txt       # Project dependencies
-├── .gitignore             # Excludes logs and temporary files
-└── README.md              # Project documentation
-
-Requirements
-Dependencies are listed in requirements.txt. Key libraries:
-
-PyQt5
-opencv-python
-numpy
-pandas
-ultralytics
-psutil
-pynvml
-torch
-
-Install them:
-pip install -r requirements.txt
-
-Notes
-
-The yolov8x.pt model (~100 MB) is not included due to size. Download it from the provided Google Drive link.
-Ensure assets/ contains waiting.png, loading.png, and icon.png to avoid warnings in logs.log (e.g., WARNING - Default image 'waiting.png' not found).
-Logs in logs.log provide detailed debugging information.
-
-License
-This project is developed for educational purposes and is not licensed for commercial use.
-Contributing
-Contributions are welcome! Please:
-
-Create a feature branch from develop.
-Submit a Pull Request for review.
-
-
-Developed by OrangeP1llow
+---
