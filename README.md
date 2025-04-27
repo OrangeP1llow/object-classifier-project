@@ -42,15 +42,29 @@ This repository contains the implementation for a **YOLO Object Detection** appl
 - **Run the application**
 - **Interface**:
    - **Main Functions Tab:**
-    - Upload an image, video, or start the webcam.
+      - Upload an image, video, or start the webcam.
+      - Adjust the confidence threshold via synchronized sliders and spinbox.
+      - Save detection results to images/ and txt/ subfolders.
+   - **Batch Processing Tab:**
+      - Select input and output folders.
+      - Choose output formats (**Excel**, **CSV**, or both) via checkboxes (at least one must be selected, or an error is shown).
+      - Process multiple images and save results to **images/**, **txt/**, and selected **Excel/CSV** files.
+      - Displays **loading.png** during processing and **waiting.png** by default or after completion/cancellation.
+      - Monitor progress with a progress bar.
+    - **About Tab:**
+      - View information about the application.
 
+#### Branching Strategy:
+- **main**: Contains only **README.md** and **.gitignore** for a clean project overview.
+- **develop**: Full codebase, including source files, assets, documentation, and README.md.
 
+#### Notes:
+- The **yolov8x.pt** model (~100 MB) is not included in the repository due to its size.
+- Ensure the **assets/** folder contains **waiting.png**, **loading.png**, and **icon.png** to avoid warnings in logs.log (e.g., WARNING - Default image 'waiting.png' not found).
+- Logs in **logs.log** provide detailed information for debugging.
 
+#### License:
+- This project is developed for educational purposes and is not licensed for commercial use.
 
-
-
-- **Run the application**
-- **Run the application**
-- **Run the application**
-
+Developed by OrangeP1llow with ❤
 ---
