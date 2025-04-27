@@ -18,13 +18,16 @@ This repository contains the implementation for a **YOLO Object Detection** appl
 - **Programming Language**: Python for application logic and GUI.
 - **Frameworks and Libraries**:
     - **PyQt5: For the graphical user interface.**
-
-
+    - **Ultralytics YOLO: For object detection.**
+    - **OpenCV: For image and video processing.**
+    - **Pandas: For Excel/CSV output.**
+    - **Psutil and Pynvml: For system monitoring.**
+- **Development Environment**: Any Python-compatible IDE (e.g., VS Code, PyCharm).
 - **Version Control**: Git for source code management and collaboration.
   
-#### Hardware:
-- **Microcontroller**: Arduino Uno R3.
-- **Output**: Display or interface for showing game states.
-- **Power Source**: Powered via USB connection.
+#### Software Requirements:
+- **Python**: Version 3.8 or higher.
+- **YOLOv8 Model**: **yolov8x.pt** (downloaded separately).
+- **Dependencies**: Listed in **requirements.txt**.
 
 ---
